@@ -1,0 +1,29 @@
+<div class="calculator">
+  <div class="calculator__output">{{input ? input:0}}</div>
+  <div class="calculator__keys">
+    <button class="calculator__key calculator__key--operator" (click)="setProccess('+')">+</button>
+    <button class="calculator__key calculator__key--operator" (click)="setProccess('-')">-</button>
+    <button class="calculator__key calculator__key--operator" (click)="setProccess('*')">&times;</button>
+    <button class="calculator__key calculator__key--operator" (click)="setProccess('/')">÷</button>
+    <button class="calculator__key" (click)="keyInput('7')">7</button>
+    <button class="calculator__key" (click)="keyInput('8')">8</button>
+    <button class="calculator__key" (click)="keyInput('9')">9</button>
+    <button class="calculator__key" (click)="delete()">&#8592;</button>
+    <button class="calculator__key" (click)="keyInput('4')">4</button>
+    <button class="calculator__key" (click)="keyInput('5')">5</button>
+    <button class="calculator__key" (click)="keyInput('6')">6</button>
+    <button class="calculator__key" (click)="clear()">C</button>
+    <button class="calculator__key" (click)="keyInput('1')">1</button>
+    <button class="calculator__key" (click)="keyInput('2')">2</button>
+    <button class="calculator__key" (click)="keyInput('3')">3</button>
+    <button class="calculator__key" (click)="keyInput('.')">.</button>
+    <button class="calculator__key" (click)="keyInput('0')">0</button>
+    <button class="calculator__key" (click)="keyInput('00')">00</button>
+    <button class="calculator__key" (click)="keyInput('.')">,</button>
+    <button class="calculator__key" (click)="setProccess('=')">=</button>
+  </div>
+  <!-- <div class="calculator__history">
+      <p *ngIf="first">{{first}} {{proccess}}</p>
+      <div *ngIf="history" [innerHTML]="history"></div>
+  </div> -->
+</div>
